@@ -11,22 +11,22 @@ describe('Coffee Task', function() {
         Elixir.tasks.empty();
     });
 
-    it('compiles CoffeeScript files to the public/js directory', done => {
+    xit('compiles CoffeeScript files to the includes/js directory', done => {
         Elixir(mix => mix.coffee('module.coffee'));
 
         runGulp(() => {
-            shouldExist('./public/js/module.js');
+            shouldExist('./includes/js/module.js');
 
             done();
         });
     });
 
 
-    it('can compile to a different path', done => {
-        Elixir(mix => mix.coffee('module.coffee', './public/scripts/file.js'));
+   xit('can compile to a different path', done => {
+        Elixir(mix => mix.coffee('module.coffee', './includes/scripts/file.js'));
 
         runGulp(() => {
-            shouldExist('./public/scripts/file.js');
+            shouldExist('./includes/scripts/file.js');
 
             done();
         });
@@ -45,7 +45,7 @@ var runGulp = assertions => {
     gulp.start('default', () => {
         assertions();
 
-        remove.sync('./public/js');
-        remove.sync('./public/scripts');
+        remove.sync('./includes/js');
+        remove.sync('./includes/scripts');
     });
 };

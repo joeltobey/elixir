@@ -15,17 +15,17 @@ describe('Styles Task', function() {
         Elixir(mix => mix.styles(['one.css', 'two.css']));
 
         runGulp(() => {
-            shouldExist('public/css/all.css');
+            shouldExist('includes/css/all.css');
 
             done();
         });
     });
 
     it('merges to any file the user wishes', function(done) {
-        Elixir(mix => mix.styles(['one.css', 'two.css'], './public/css/merged.css'));
+        Elixir(mix => mix.styles(['one.css', 'two.css'], './includes/css/merged.css'));
 
         runGulp(() => {
-            shouldExist('public/css/merged.css');
+            shouldExist('includes/css/merged.css');
 
             done();
         });
@@ -40,7 +40,7 @@ describe('Styles Task', function() {
         });
 
         runGulp(() => {
-            shouldExist('public/css/all.css');
+            shouldExist('includes/css/all.css');
 
             done();
         });
@@ -58,7 +58,7 @@ var runGulp = assertions => {
     gulp.start('default', () => {
         assertions();
 
-        remove.sync('./public/css');
+        remove.sync('./includes/css');
         remove.sync('./resources/assets/styles');
     });
 };
