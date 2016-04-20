@@ -3,3 +3,5 @@ node_modules/
 npm-debug.log
 todo.txt
 dist/
+test-app/coldbox
+test-app/testbox
