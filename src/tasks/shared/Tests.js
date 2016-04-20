@@ -19,7 +19,7 @@ export default function(name, src, command) {
             .pipe(notify.forPassedTests(name))
         );
     })
-    .watch(src)
-    .watch(Elixir.config.appPath + '/**/*.php', 'tdd')
-    .watch(Elixir.config.viewPath +'/**/*.php', 'tdd');
+    .watch( src )
+    .watch( Elixir.config.appPath + '/**/*.cfc', 'bdd' )
+    .watch( Elixir.config.viewPath +'/**/*.cfm', 'bdd' );
 };
