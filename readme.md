@@ -1,5 +1,7 @@
 # ColdBox Elixir
 
+[![Build Status](https://travis-ci.org/ColdBox/elixir.svg?branch=master)](https://travis-ci.org/ColdBox/elixir)
+
 ## Introduction
 
 > ColdBox Elixir is a direct port of the [Laravel Elixir](https://github.com/laravel/elixir) project.
