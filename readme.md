@@ -35,6 +35,4 @@ ColdBox Elixir is open-sourced software licensed under the [MIT license](http://
 
 ## Changelog
 
-### 1.0.0
-
-- Initial Port to ColdBox
+[ChangeLog](changelog.md)
