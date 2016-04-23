@@ -152,7 +152,7 @@ class Task {
  * @return {boolean}
  */
 let shouldRunAllTasksWithName = function(name) {
-    return _.intersection(gutils.env._, [name, 'watch', 'tdd']).length;
+    return _.intersection(gutils.env._, [name, 'watch', 'tdd', 'bdd']).length;
 };
 
 export default function(elixir) {
