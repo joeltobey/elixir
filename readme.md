@@ -13,7 +13,7 @@ If you've ever been confused about how to get started with Gulp and asset compil
 
 ## Official Documentation
 
-It's coming
+Visit our [wiki](https://github.com/ColdBox/elixir/wiki) for our latest docs
 
 ## Developing
 
@@ -35,4 +35,4 @@ ColdBox Elixir is open-sourced software licensed under the [MIT license](http://
 
 ## Changelog
 
-[ChangeLog](changelog.md)
+[Click here to open the changelog](changelog.md)
