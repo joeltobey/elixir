@@ -62,16 +62,24 @@ const config = {
 
 	/*
 	 |----------------------------------------------------------------
-	 | App Path
+	 | App Paths
 	 |----------------------------------------------------------------
 	 |
-	 | The app path, you guessed it, specifies the path to the app
-	 | folder in your project. If using ColdBox, then you won't
-	 | need to modify this path. Otherwise modify as needed.
-	 | TODO: Update to use ColdBox Conventions: handlers/models/modules/modules_app
+	 | Main app path convention locations of ColdBox
 	 */
 
-	appPath : 'app',
+	appPaths : {
+		"root"			: "",
+		"config" 		: "config",
+		"handlers" 		: "handlers",
+		"interceptors" 	: "interceptors",
+		"layouts"		: "layouts",
+		"models" 		: "models",
+		"modules" 		: "modules",
+		"modules_app" 	: "modules_app",
+		"tests" 		: "tests",
+		"views"			: "views"
+	},
 
 	/*
 	 |----------------------------------------------------------------
@@ -347,7 +355,24 @@ const config = {
 				// https://www.npmjs.com/package/watchify#usage
 				options : {}
 			}
-		}
+		},
+
+		/*
+         |----------------------------------------------------------------
+         | CoffeeScript Compilation
+         |----------------------------------------------------------------
+         |
+         | If you prefer CoffeeScript compilation, this object stores
+         | the defaults for the Coffee folder name - not the path.
+         | When used, this value will be affixed to assetsPath.
+         |
+         */
+        coffee: {
+            folder: 'coffee',
+
+            // https://github.com/wearefractal/gulp-coffee#options
+            options: {}
+        }
 	},
 
 	testing: {
