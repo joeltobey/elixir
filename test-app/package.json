@@ -4,7 +4,6 @@
     "gulp": "^3.9.1"
   },
   "dependencies": {
-    "coldbox-elixir": "^1.0.0",
-    "bootstrap-sass": "^3.3.6"
+    "coldbox-elixir": "../dist/index.js"
   }
 }
