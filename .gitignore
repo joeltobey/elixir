@@ -5,3 +5,4 @@ todo.txt
 dist/
 test-app/coldbox
 test-app/testbox
+test-app/includes
