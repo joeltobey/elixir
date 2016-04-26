@@ -3,23 +3,22 @@ import Elixir from '../../index';
 
 const notify = new Elixir.Notification();
 
-export default function(name, src, command) {
-    new Elixir.Task(name, function(error) {
-        Elixir.Log.heading('Triggering ' + name + ': ' + command);
+export default function( name, src, command ){
+    new Elixir.Task( name, function( error ){
+        Elixir.Log.heading( 'Triggering ' + name + ': ' + command );
 
         return (
             gulp
-            .src('')
-            .pipe(Elixir.Plugins.shell(command))
-            .on('error', function(e) {
-                notify.forFailedTests(e, name);
-
-                this.emit('end');
+            .src( '' )
+            .pipe( Elixir.Plugins.shell( command ) )
+            .on( 'error', function( e ){
+                notify.forFailedTests( e, name );
+                this.emit( 'end' );
             })
-            .pipe(notify.forPassedTests(name))
+            .pipe( notify.forPassedTests( name ) )
         );
-    })
+    } )
     .watch( src )
-    .watch( Elixir.config.appPath + '/**/*.cfc', 'bdd' )
+    .watch( Elixir.config.appPaths.root + '/**/*.cfc', 'bdd' )
     .watch( Elixir.config.viewPath +'/**/*.cfm', 'bdd' );
 };
