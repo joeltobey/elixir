@@ -3,6 +3,7 @@ node_modules/
 npm-debug.log
 todo.txt
 dist/
+test-app/npm-debug.log
 test-app/coldbox
 test-app/testbox
 test-app/includes
