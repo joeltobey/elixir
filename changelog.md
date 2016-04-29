@@ -7,7 +7,7 @@
 - Gulp tasks for compilation, tests and watchers
 - Test App additions for testing direct gulp integrations
 - If not tasks defined in the user's gulpfile, just a message is shown instead of an exception
-- Added coffeescript support
+- Removed coffeescript support, no longer needed
 - Added new config map for `appPaths` to support all ColdBox conventions
 
 ## 1.0.0 

@@ -36,12 +36,6 @@ Elixir.extend('sass', function() {
     gulpTask.apply(this, arguments);
 });
 
-
-// Deprecated. Only for backward compatibility.
-Elixir.extend('rubySass', function() {
-    gulpTask.apply(this, arguments);
-});
-
 /**
  * Prep the Gulp src and output paths.
  *

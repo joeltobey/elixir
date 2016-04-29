@@ -41,7 +41,7 @@ const config = {
 	 |
 	 | This assets path property is prefixed to all relevant assets
 	 | in your application. For example, "resources/assets/sass"
-	 | or "resources/assets/coffee." Change this if you must.
+	 | or "resources/assets/less." Change this if you must.
 	 |
 	 */
 
@@ -355,24 +355,7 @@ const config = {
 				// https://www.npmjs.com/package/watchify#usage
 				options : {}
 			}
-		},
-
-		/*
-         |----------------------------------------------------------------
-         | CoffeeScript Compilation
-         |----------------------------------------------------------------
-         |
-         | If you prefer CoffeeScript compilation, this object stores
-         | the defaults for the Coffee folder name - not the path.
-         | When used, this value will be affixed to assetsPath.
-         |
-         */
-        coffee: {
-            folder: 'coffee',
-
-            // https://github.com/wearefractal/gulp-coffee#options
-            options: {}
-        }
+		}
 	},
 
 	testing: {

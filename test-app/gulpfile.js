@@ -12,5 +12,5 @@ var elixir = require( 'coldbox-elixir' );
  */
 
 elixir( function( mix ){
-    mix.coffee( 'module.coffee' );
+    mix.sass( 'app.scss' );
 } );
