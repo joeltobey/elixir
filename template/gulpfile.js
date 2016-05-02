@@ -12,9 +12,5 @@ var elixir = require( 'coldbox-elixir' );
  */
 
 elixir( function( mix ){
-    mix.sass( 'app.scss' )
-    	.version( "css/app.css" )
-    	.version( "js/lib1.js" )
-    	.babel( "lib1.js" )
-    	.browserify( "main.js" );
+	
 } );

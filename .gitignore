@@ -7,3 +7,4 @@ test-app/npm-debug.log
 test-app/coldbox
 test-app/testbox
 test-app/includes
+test-app/node_modules
