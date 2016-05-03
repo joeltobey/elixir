@@ -10,6 +10,7 @@ describe( 'Vueify + Browserify Task', function(){
     } );
 
     it( 'can compile vue components', function( done ){
+        this.timeout(10000);
         Elixir( mix => mix.browserify( "main.js" ) );
         runGulp( () => {
             shouldExist( 'includes/js/main.js' );
