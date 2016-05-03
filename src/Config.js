@@ -412,7 +412,6 @@ const config = {
 
 	browserSync : {
 		// http://www.browsersync.io/docs/options/
-		proxy 			: 'homestead.app',
 		reloadOnRestart : true,
 		notify 			: true
 	}
