@@ -13,7 +13,7 @@ If you've ever been confused about how to get started with Gulp and asset compil
 
 ## Official Documentation
 
-Visit our [wiki](https://github.com/ColdBox/elixir/wiki) for our latest docs
+Visit [http://coldbox-elixir.ortusbooks.com](http://coldbox-elixir.ortusbooks.com) for our latest documentation book.
 
 ## Developing
 
